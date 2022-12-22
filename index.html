@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;500&display=swap" rel="stylesheet">
+   <link rel="icon" type="image/png" sizes="32x32" href="https://th.bing.com/th/id/R.41e88c6ba94ccfcbfebfd195f479bcc1?rik=igpxpjqjpxGAcQ&pid=ImgRaw&r=0">
+   <link rel="stylesheet" href="style.css">
+   <title>RPS game</title>
+</head>
+<body>
+   <div id="start" class="Everything">
+      <div class="container">
+         <div class="upArea">
+            <div class="leftSide">
+               <h3 class="rockH3">ROCK</h3>
+               <h3 class="paperH3">PAPER</h3>
+               <h3 class="scissorsH3">SCISSORS</h3>
+            </div>
+            <div class="rightSide" id="scoreboard">
+               <h6 class="points">POINTS</h6>
+               <h2 class="numberPoints" id="player-score">0</h2>
+            </div>
+         </div>
+         <div class="pick">Pick a move.</div>
+         <div class="itemsArea">
+            <div class="scissors">
+               <img src="img/rockscissorspaper.png" alt="scissors" class="scissorsImg">
+            </div>
+            <div class="paper">
+               <img src="img/rockscissorspaper3.png" alt="paper" class="paperImg">
+            </div> 
+            <div class="rock">
+               <img src="img/rockscissorspaper2.png" alt="rock" class="rockImg">
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="battle-everything">
+      <div class="battle">
+         <div class="ifRock">
+            <div class="rockBattle">
+               <img src="img/rockscissorspaper2.png" alt="rock" class="rockImgBattle">
+            </div>
+         </div>
+      </div>
+      <div class="battle-2">
+         <div class="ifPaper">
+            <div class="paperBattle">
+               <img src="img/rockscissorspaper3.png" alt="paper" class="paperImgBattle">
+            </div> 
+         </div>
+      </div> 
+      <div class="battle-3">
+         <div class="ifScissors">
+            <div class="scissorsBattle">
+               <img src="img/rockscissorspaper.png" alt="scissors" class="scissorsImgBattle">
+            </div>
+         </div>
+      </div>  
+         <div class="you">You</div>
+         <div class="against">VS</div>
+         <div class="enemy">Enemy</div>
+      <hr class="vsHr">
+
+      <div class="WLD">
+         <h2 class="WLDdisplayer"></h2>
+      </div>
+
+      <div class="playAgain">
+         <button class="playAgainButton">Play again</button>
+
+      </div>
+   </div>
+
+   <div class="battleYou">
+      <div class="scissorsYouDivBattle">
+         <img src="img/rockscissorspaper.png" alt="scissors" class="scissorsYouBattle">
+      </div>
+
+      <div class="rockYouDivBattle">
+         <img src="img/rockscissorspaper2.png" alt="rock" class="rockYouBattle">
+      </div>
+   
+      <div class="paperYouDivBattle">
+         <img src="img/rockscissorspaper3.png" alt="paper" class="paperYouBattle">
+      </div>
+   </div>
+
+   <div class="buttonsToScroll">
+      <button class="scrollToInformation"> <a class="aaa" href="#info"> NEED RULES? </a> </button>
+   
+      <button class="scrollToStart"> <a class="aaaa" href="#start"> Back? </a> </button>
+   </div>
+   
+   <div class="information" id="info">
+      <div class="container60deg">
+         <h1 class="title">How to play?</h1>
+         <p class="howToPlayGuide">Rock-paper-scissors is a simple hand game that is played by two people. The game is usually played with the players counting to three in unison and simultaneously throwing one of three hand signs representing rock, paper, or scissors. <br> The winner is determined by the rules: <br> <br>
+
+            -Rock beats scissors <br>
+            -Scissors beat paper <br>
+            -Paper beats rock
+         </p>
+      </div>
+   </div>
+   
+   <script src="script.js"></script>
+</body>
+</html>

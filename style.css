@@ -1,0 +1,395 @@
+body {
+   overflow: hidden;
+   background: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0));
+   font-family: 'Nunito', sans-serif;
+}
+
+.container {
+   width: 70%;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.leftSide {
+   font-size: 20px;
+   color: white;
+   float: left;
+   line-height: 1px;
+   padding-left: 15px;
+   letter-spacing: 2px;
+   transition: 1s;
+}
+
+.leftSide:hover {
+   color: red;
+}
+
+.rightSide {
+   transform: translateY(-10px);
+   line-height: 3px;
+   margin-left: 100px;
+   margin: 0 auto;
+   padding: 10px;
+   margin: 20px;
+   height: 60px;
+   width: 90px;
+   border-radius: 4px;
+   float: right;
+   color: black;
+   background-color: white;
+}
+
+.points {
+   margin: 0 auto;
+   font-size: 9px;
+   font-weight: bold;
+   text-align: center;
+
+}
+
+.numberPoints {
+   text-align: center;
+   font-size: 40px;
+}
+
+.pick {
+   color: white;
+}
+
+.upArea {
+   height: 100px;
+/*    border: 2px solid rgb(133, 198, 255);
+   border-radius: 12px; */
+}
+
+.rockImg {
+   height: 150px;
+   transform: translate(20px, 15px);
+}
+
+.scissorsImg {
+   transform: translateY(-10px, 10);
+   width: 170px;
+}
+
+.paperImg {
+   width: 150px;
+   transform: translate(10px, 15px);
+}
+
+.scissors {
+   transform: translate(100px);
+   margin-top: 100px;
+/*    background-color: rgb(0, 0, 0); */
+   height: 190px;
+   width: 190px;
+/*    border-radius: 120px; */
+/*    border: rgb(255, 255, 255) 25px solid; */
+   cursor: pointer;
+}
+
+.paper {
+   transform: translate(370px, -220px);
+   margin-top: 30px;
+   margin-left: 30px;
+/*    background-color: rgb(0, 0, 0); */
+   height: 190px;
+   width: 90px;
+/*    border-radius: 120px;
+   border: rgb(255, 255, 255) 25px solid; */
+   cursor: pointer;
+}
+
+.rock {
+   transform: translate(640px, -439px);
+   margin-top: 30px;
+   margin-left: 20px;
+/*    background-color: rgb(0, 0, 0); */
+   height: 100px;
+   width: 100px;
+/*    border-radius: 60px;
+   border: rgb(255, 255, 255) 5px solid; */
+   cursor: pointer;
+}
+
+.itemsArea {
+   margin-top: 50px;
+}
+
+.Everything {
+   margin-top: 30px;
+   display: block;
+}
+
+.waitScreen {
+   display: none;
+   color: white;
+   text-align: center;
+   font-size: 80px;
+   font-weight: bold;
+   height: 300px;
+   width: 600px;
+   margin: 0 auto;
+   transform: translate(0%, 50%);
+   background-color: rgb(0, 0, 0);
+}
+
+.battle {
+   display: none;
+   text-align: center;
+   margin-left: 1000px;
+}
+
+.battle-2 {
+   display: none;
+   text-align: center;
+   margin-left: 1000px;
+}
+
+.battle-3 {
+   display: none;
+   text-align: center;
+   margin-left: 1000px;
+}
+
+.paperImgBattle {
+   transform: translate(-160px, 80px);
+   margin-top: 30px;
+   background-color: #fff;
+   height: 190px;
+   width: 190px;
+   border-radius: 120px;
+   border: rgb(0, 0, 0) 25px solid;
+   cursor: pointer;
+}
+
+.rockImgBattle {
+   transform: translate(-160px, 80px);
+   margin-top: 30px;
+   background-color: #fff;
+   height: 190px;
+   width: 190px;
+   border-radius: 120px;
+   border: rgb(0, 0, 0) 25px solid;
+   cursor: pointer;
+}
+
+.pick {
+   text-align: center;
+   margin-left: -60px;
+   margin-top: 50px;
+   font-weight: bold;
+   font-size: 30px;
+}
+
+.scissorsImgBattle {
+   transform: translate(-160px, 107px);
+   background-color: #fff;
+   height: 190px;
+   width: 190px;
+   border-radius: 120px;
+   border: rgb(0, 0, 0) 25px solid;
+   cursor: pointer;
+}
+
+/* .exitButton {
+   display: none;
+   top: 50px;
+   position: absolute;
+   cursor: pointer;
+   height: 50px;
+   width: 150px;
+   background-color: #0066ff;
+   border: none;
+   font-weight: bold;
+   font-family: 'Nunito', sans-serif;
+   border-radius: 5px;
+   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+   color: white;
+   padding: 15px 32px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   box-shadow: 0 0 10px 5px rgb(0, 13, 255);
+} */
+
+.against {
+   transform: translateY(-100px);
+   font-size: 100px;
+   font-weight: bold;
+   color: rgb(255, 255, 255);
+   text-align: center;
+}
+
+.battle-everything {
+   transform: translate(0px, 100px);
+   display: none;
+   margin: 0 auto;
+   border: rgb(0, 0, 0) 2px solid;
+   border-radius: 12px;
+   height: 600px;
+   background: black;
+   width: 1200px;
+   opacity: 100%;
+   margin-bottom: 60px;
+}
+
+.vsHr {
+   transform: translateY(0px);
+   background-color: #fff;
+}
+
+.scissorsYouBattle {
+   transform: translate(280px, -450px);
+   background-color: #fff;
+   height: 190px;
+   width: 190px;
+   border-radius: 120px;
+   border: rgb(0, 0, 0) 25px solid;
+   cursor: pointer;
+}
+
+.rockYouBattle {
+   z-index: 1;
+   display: none;
+   transform: translate(280px, -450px);
+   margin-top: 30px;
+   background-color: #fff;
+   height: 190px;
+   width: 190px;
+   border-radius: 120px;
+   border: rgb(0, 0, 0) 25px solid;
+   cursor: pointer;
+}
+
+.paperYouBattle {
+   transform: translate(280px, -450px);
+   margin-top: 30px;
+   background-color: #fff;
+   height: 190px;
+   width: 190px;
+   border-radius: 120px;
+   border: rgb(0, 0, 0) 25px solid;
+   cursor: pointer;
+}
+
+.WLD {
+   text-align: center;
+   background: white;
+   color: rgb(0, 0, 0);
+   width: 600px;
+   height:130px; 
+   margin: 0 auto;
+   padding-top: 0px;
+   font-size: 50px;
+   font-weight: bold;
+   transform: translate(-270px, 16px);
+   border:black 1px solid;
+   color: rgb(0, 0, 0);
+}
+
+.WLDdisplayer {
+   transform: translate(0px, -50px);
+}
+
+.playAgainButton {
+   cursor: pointer;
+   text-align: center;
+   background: white;
+   color: rgb(0, 0, 0);
+   width: 400px;
+   border-radius:12px;
+   height:130px; 
+   margin: 0 auto;
+   padding-top: 0px;
+   font-size: 50px;
+   font-weight: bold;
+   transform: translate(770px, -115px);
+}
+
+.howToPlayGuide {
+   color: black;
+   font-size: 30px;
+   padding-bottom: 80px;
+}
+
+.information {
+   background-color: #fff;
+}
+
+.container60deg {
+   width: 60%;
+   margin-right: auto;
+   margin-left: auto;
+}
+
+.title {
+   font-weight: bold;
+   font-size: 50px;
+}
+
+.madeByArtem {
+   color: rgb(0, 0, 0);
+}
+
+.scrollToInformation {
+   border: 2px rgb(0, 0, 0) solid ;
+   height: 100px;
+   background-color: #000;
+   width: 400px;
+   transform: translate(526px, -240px);
+}
+
+.aaa {
+   font-weight: bold;
+   font-size: 40px;
+   text-decoration: none;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   color: white;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+a.scroll-link {
+   cursor: pointer;
+}
+
+ /* Add the animation to the anchor element */
+.animated-element {
+   animation: fadeIn ease-in 1;
+}
+
+.aaaa {
+   color: white;
+   font-weight: bold;
+   font-size: 40px;
+   text-decoration: none;
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.scrollToStart {
+   border: 2px rgb(0, 0, 0) solid ;
+   height: 100px;
+   background-color: #000;
+   width: 400px;
+   transform: translate(120px, 0px);
+}
+
+.you {
+   display: none;
+   color: white;
+   font-size: 30px;
+   font-weight: bold;
+   transform: translate(210px, 100px);
+}
+
+.enemy {
+   display: none;
+   color: white;
+   font-size: 30px;
+   font-weight: bold;
+   transform: translate(920px, -77px);
+}
